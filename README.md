@@ -1,6 +1,6 @@
 <!-- ./README.md -->
 # **Overview** - Fan Controller TXU0204 Pico
-<1-- quick summary for github -->
+<!-- quick summary for github -->
 ⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️
 
 ⚠️ i am just making this for a hobby.  i have no idea what i am doing.  i ⚠️
