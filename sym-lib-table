@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "lib_fan-controller-txu0204-pico") (type "KiCad") (uri "${KIPRJMOD}/misc/lib_fan-controller-txu0204-pico.kicad_sym") (options "") (descr ""))
+)

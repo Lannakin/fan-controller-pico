@@ -1,0 +1,5462 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "00e9a4b1-0b59-4f9f-bdd5-7ad643f28a92")
+	(paper "A3")
+	(title_block
+		(rev "3.0.0")
+		(company "${COMPANY_LOL}")
+	)
+	(lib_symbols
+		(symbol "bad-symbol-edits:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#GND"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Symbol Name" "GND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global ground gnd"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "capacitors-added:GRM18_MURATA"
+			(body_styles demorgan)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 2.54 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "F"
+				(at 2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "lsc-capacitors-added:C_GRM18_0603_1608Metric_MURATA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" "Chip Multilayer Ceramic Capacitors for Consumer Electronics & Industrial Equipment"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part Number" ""
+				(at 2.54 -5.334 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Symbol Name" ""
+				(at 2.54 -4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 2.54 -2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Rating" "AEC-Q200 / -"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Type" " "
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage" "V"
+				(at 2.54 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "capacitor ceramic mlcc"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CAP_TAJ-R-0805-LP_AVX CAP_TAJ-R-0805-LP_AVX-M CAP_TAJ-R-0805-LP_AVX-L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GRM18_MURATA_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -0.762)
+					(mid 0 -0.3734)
+					(end 1.524 -0.762)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GRM18_MURATA_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "GRM18_MURATA_1_2"
+				(polyline
+					(pts
+						(xy -1.905 -3.4798) (xy 1.905 -3.4798)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -4.1148) (xy 1.905 -4.1148)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -3.4798)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -4.1148) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "displays-added:ER-OLEDM0.96-1x-I2C_EASTRISING"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 10.16 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "OLEDM0.96-1YB-I2C"
+				(at 10.16 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "lsc-module:ER-OLEDM0.96_1x-I2C_ALT_EASTRISING"
+				(at 18.034 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.buydisplay.com/download/manual/ER-OLEDM0.96-1_Series_Datasheet.pdf"
+				(at 42.672 -14.732 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "SSD1306 OLED module, 0.96 inch, 128x64, I2C"
+				(at 26.67 -16.764 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "EastRising"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "ER?OLEDM0.91?1x?I2C*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ER-OLEDM0.96-1x-I2C_EASTRISING_1_1"
+				(rectangle
+					(start 3.81 3.81)
+					(end 16.51 -19.05)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 10.16 -22.86 90)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 3.81)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at 0 -10.16 0)
+					(length 3.81)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -15.24 0)
+					(length 3.81)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "leds-added:587-1024-147F"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "LD"
+				(at 5.08 10.668 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "587-1024-147F"
+				(at 5.08 8.636 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "lsc-led-rgb-smd:587-1024_DIA"
+				(at 24.13 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.557/Dialight_datasheet_587-1024-147F_Addressable_RGB.pdf"
+				(at 24.13 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "587 Series Addressable SMD RGB LED, 2020 Package 0.9mm Height, Single Wire"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Dialight"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part Number" "587-1024-147F"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage - Supply" "3.3 - 5.5V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Current - Supply" "1mA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Forward Current" "16.75mA (limit)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Function" ""
+				(at 5.08 6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(color 108 113 196 1)
+					)
+					(justify left)
+				)
+			)
+			(property "Height" "0.9mm"
+				(at 24.13 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(symbol "587-1024-147F_0_0"
+				(text "R"
+					(at 10.922 -1.524 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "G"
+					(at 10.922 -6.604 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "B"
+					(at 10.922 -11.684 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -10.16 0)
+					(length 5.08)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 25.4 0 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 0 0)
+					(length 5.08)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 25.4 -10.16 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "587-1024-147F_0_1"
+				(rectangle
+					(start 5.08 5.08)
+					(end 20.32 -15.24)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -10.922) (xy 14.224 -10.922)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.684 0.508) (xy 11.684 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.684 -4.572) (xy 11.684 -7.112)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.684 -9.652) (xy 11.684 -12.192)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.938 0.508) (xy 13.462 2.032) (xy 12.7 2.032) (xy 13.462 2.032) (xy 13.462 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.938 -4.572) (xy 13.462 -3.048) (xy 12.7 -3.048) (xy 13.462 -3.048) (xy 13.462 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.938 -9.652) (xy 13.462 -8.128) (xy 12.7 -8.128) (xy 13.462 -8.128) (xy 13.462 -8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.954 0.508) (xy 14.478 2.032) (xy 13.716 2.032) (xy 14.478 2.032) (xy 14.478 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.954 -4.572) (xy 14.478 -3.048) (xy 13.716 -3.048) (xy 14.478 -3.048) (xy 14.478 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.954 -9.652) (xy 14.478 -8.128) (xy 13.716 -8.128) (xy 14.478 -8.128) (xy 14.478 -8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 14.224 0.508) (xy 14.224 -2.032) (xy 11.684 -0.762) (xy 14.224 0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 14.224 -4.572) (xy 14.224 -7.112) (xy 11.684 -5.842) (xy 14.224 -4.572)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 14.224 -9.652) (xy 14.224 -12.192) (xy 11.684 -10.922) (xy 14.224 -9.652)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 14.224 -10.922) (xy 14.986 -10.922) (xy 14.986 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 14.986 -0.762)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 14.986 -5.842) (xy 10.16 -5.842)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 14.986 -5.842)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 20.32 0) (xy 19.558 -0.762) (xy 10.16 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "587-1024-147F_1_1"
+				(rectangle
+					(start 10.16 2.54)
+					(end 15.748 -12.954)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "resistors-added:template-resistor-small-us"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RES"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "RES $RESISTANCE OHM $TOLERANCE% $WATTSW $PKGMETRIC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part Number" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Symbol Name" "template-resistor-small-us"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "template-resistor-small-us_1_1"
+				(polyline
+					(pts
+						(xy -1.524 0) (xy -1.143 1.016) (xy -0.381 -1.016) (xy 0.381 1.016) (xy 1.143 -1.016) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "switches-added:PEC12R-4120F-S0012_BOURNS"
+			(body_styles "SHIELD=COMMON" "SHIELD!=COMMON")
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "S"
+				(at 0 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PEC12R-4120F-S0012_BOURNS"
+				(at 0 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PEC12R-4120F-S0012:XDCR_PEC12R-4120F-S0012"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Rotary Encoder Incremental 12 Quadrature (Incremental) Horizontal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Bourns"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Part Number" "PEC12R-4120F-S0012"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Actuator Type" "6mm Dia Flatted End"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage - Rated" "?5V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Current - Rated" "10mA @ 5VDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pulses per Revolution" "12"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Contact Resistance" "100mΩ @ 5VDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PEC12R-4120F-S0012_BOURNS_0_0"
+				(rectangle
+					(start -8.89 10.16)
+					(end 8.89 -16.51)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 5.08) (xy -3.81 5.08) (xy 1.524 7.2136)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.905 5.08)
+					(radius 0.3302)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 5.08) (xy 2.286 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -12.7 5.08 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 5.08 180)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PEC12R-4120F-S0012_BOURNS_0_1"
+				(pin passive line
+					(at 0 -20.32 90)
+					(length 3.81)
+					(name "COMMON"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "[C,SH1,SH2]"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PEC12R-4120F-S0012_BOURNS_0_2"
+				(pin passive line
+					(at -2.54 -20.32 90)
+					(length 3.81)
+					(name "COMMON"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -20.32 90)
+					(length 3.81)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "[SH1,SH2]"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 238.76 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0062c5f2-7bff-4375-8fda-3b0ac18aec8a")
+	)
+	(junction
+		(at 195.58 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0aa76375-0135-48d1-93d2-b72cbfd00135")
+	)
+	(junction
+		(at 195.58 259.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "107ece87-faa2-4991-a7c9-24e125752a7d")
+	)
+	(junction
+		(at 215.9 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13eaccad-201b-4381-93e9-640ed0173b05")
+	)
+	(junction
+		(at 238.76 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "150a3bc5-a0c5-4acf-bbb0-bf2ac6e30637")
+	)
+	(junction
+		(at 195.58 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24a10a1c-70bb-4331-b82b-592212c92942")
+	)
+	(junction
+		(at 205.74 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32d725d9-2c35-4ac3-8ab6-2fb5d7f0b28f")
+	)
+	(junction
+		(at 284.48 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33b55b05-9f4e-4bd1-b9e1-d7c4aa912269")
+	)
+	(junction
+		(at 215.9 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d9cf9bd-e74f-43d2-b07a-0915847e22f1")
+	)
+	(junction
+		(at 195.58 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b5ba388-7922-41d8-8763-b05806a0a72d")
+	)
+	(junction
+		(at 246.38 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5849633c-2787-4d0c-9070-4cff00184785")
+	)
+	(junction
+		(at 215.9 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "626f6fa9-f30e-47b3-8833-065d6d831d6a")
+	)
+	(junction
+		(at 195.58 248.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7671f65a-ba54-4bcd-a6b6-5e573a6e4f1e")
+	)
+	(junction
+		(at 215.9 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "851158ca-eca3-4fd5-941b-3bd6a3963467")
+	)
+	(junction
+		(at 215.9 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8542b59c-c1ce-4064-9a5e-d05afffa6980")
+	)
+	(junction
+		(at 246.38 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f3c1348-2628-4cb4-b460-16205d7ce21b")
+	)
+	(junction
+		(at 205.74 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1bcc007-e526-464f-80e0-6a2b243eb5f0")
+	)
+	(junction
+		(at 238.76 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2078488-f0be-4eb7-aea4-a63a5876c989")
+	)
+	(junction
+		(at 215.9 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8cc4912-2644-47a9-a2a5-b746771c4817")
+	)
+	(junction
+		(at 195.58 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba1462fc-35aa-4a6d-8def-87418cc3c0f5")
+	)
+	(junction
+		(at 246.38 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "baff84f3-9622-4980-9b71-e4676620788d")
+	)
+	(junction
+		(at 195.58 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c747b4d4-0de3-4232-a667-f61b8b4cb4a7")
+	)
+	(junction
+		(at 195.58 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfcbf9a5-f183-402f-aaac-30390ea426c3")
+	)
+	(junction
+		(at 195.58 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de2f454b-4d07-469a-ba1f-250e47c2fdb0")
+	)
+	(junction
+		(at 195.58 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e19594cf-9d0d-4c46-8eaa-88b8989c38d0")
+	)
+	(junction
+		(at 205.74 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef1716aa-3b5c-4fb9-bc78-112e984cc982")
+	)
+	(junction
+		(at 205.74 259.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f322aa5f-108c-4db5-87c7-bd78022223d9")
+	)
+	(junction
+		(at 279.4 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f483a67e-7c96-440f-a90b-f2d2571b5908")
+	)
+	(junction
+		(at 238.76 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb6f4f14-a293-48a0-8a74-c85aeca83cdd")
+	)
+	(no_connect
+		(at 165.1 259.08)
+		(uuid "bbb4e053-e9df-4e44-84d2-e3b7154c6d46")
+	)
+	(wire
+		(pts
+			(xy 279.4 190.5) (xy 279.4 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "004c0422-25b3-49e6-a37a-ee6b2692aba0")
+	)
+	(wire
+		(pts
+			(xy 195.58 167.64) (xy 205.74 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0548856b-97ba-4861-9bb5-7ac46ccc781c")
+	)
+	(wire
+		(pts
+			(xy 238.76 134.62) (xy 264.16 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "075fd2ee-2fa7-4369-bde3-0273bad2921f")
+	)
+	(wire
+		(pts
+			(xy 195.58 134.62) (xy 195.58 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b01bd77-93b2-4394-adfd-30ae69e2f89a")
+	)
+	(wire
+		(pts
+			(xy 238.76 119.38) (xy 246.38 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b5662e8-80ce-4211-bd81-41dcce85bf96")
+	)
+	(wire
+		(pts
+			(xy 195.58 127) (xy 195.58 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c25bf4b-cd79-4856-abcc-d1695ce4c98b")
+	)
+	(wire
+		(pts
+			(xy 195.58 248.92) (xy 195.58 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eb6a206-8d1a-4f2c-9be1-6b776d7902cb")
+	)
+	(wire
+		(pts
+			(xy 238.76 147.32) (xy 238.76 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0feb9119-ed6e-4277-9010-d3b0d79d9c58")
+	)
+	(wire
+		(pts
+			(xy 264.16 175.26) (xy 238.76 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1044c3c0-a3eb-4511-8662-aad65417708b")
+	)
+	(wire
+		(pts
+			(xy 228.6 162.56) (xy 254 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12f6d938-3f2f-499a-baea-f5360e4ae7d1")
+	)
+	(wire
+		(pts
+			(xy 190.5 248.92) (xy 215.9 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1609fc1f-06a4-4a7f-a0e8-4d89d91393dd")
+	)
+	(wire
+		(pts
+			(xy 294.64 162.56) (xy 289.56 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1865059c-032c-4706-99df-f5820201eaa2")
+	)
+	(wire
+		(pts
+			(xy 195.58 218.44) (xy 195.58 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ba9df63-7650-4656-9b21-7df870d721d4")
+	)
+	(wire
+		(pts
+			(xy 228.6 134.62) (xy 238.76 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d7b8a53-e956-49fc-96cd-f7c31f631ef7")
+	)
+	(wire
+		(pts
+			(xy 190.5 167.64) (xy 195.58 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e1fe475-5e19-420e-89a7-97a7e21b2405")
+	)
+	(wire
+		(pts
+			(xy 238.76 127) (xy 238.76 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ed9622d-606d-4c7f-a84d-b4d1691e36dd")
+	)
+	(wire
+		(pts
+			(xy 190.5 218.44) (xy 215.9 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24d1f525-09ee-4101-8758-f2922a87b741")
+	)
+	(wire
+		(pts
+			(xy 259.08 162.56) (xy 264.16 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a0f44b5-76b3-42ad-b6b2-053a5fe3f74c")
+	)
+	(wire
+		(pts
+			(xy 160.02 198.12) (xy 160.02 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2af5d6f6-c3da-4157-bc66-1a51c47e9a1d")
+	)
+	(wire
+		(pts
+			(xy 205.74 259.08) (xy 190.5 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b711032-04c0-4323-bcf8-7bc805368853")
+	)
+	(wire
+		(pts
+			(xy 165.1 137.16) (xy 160.02 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33034338-06f2-4f75-b0c1-1a97c92b9aec")
+	)
+	(wire
+		(pts
+			(xy 205.74 198.12) (xy 205.74 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34e488f4-216d-4f3a-9433-3b14563c09ad")
+	)
+	(wire
+		(pts
+			(xy 215.9 101.6) (xy 218.44 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38b257e1-40fa-4423-8371-26413248f65d")
+	)
+	(wire
+		(pts
+			(xy 284.48 196.85) (xy 284.48 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38c925c0-a896-46c1-a1c2-0c3f60a5fbae")
+	)
+	(wire
+		(pts
+			(xy 215.9 127) (xy 215.9 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41509f16-d031-4ed8-b521-23234cfed064")
+	)
+	(wire
+		(pts
+			(xy 294.64 162.56) (xy 294.64 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4195905b-bdc2-40e4-838a-4d914e6810d8")
+	)
+	(wire
+		(pts
+			(xy 160.02 218.44) (xy 165.1 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45b86d3a-36ab-4a3e-a85e-94e9fafa2e17")
+	)
+	(wire
+		(pts
+			(xy 195.58 226.06) (xy 195.58 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a27b7bb-c046-4ffb-89ad-818449a0958b")
+	)
+	(wire
+		(pts
+			(xy 246.38 152.4) (xy 246.38 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ad87736-13df-4e06-9b02-f379fc395630")
+	)
+	(wire
+		(pts
+			(xy 205.74 137.16) (xy 205.74 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cc4fef3-c8f3-4f3f-b3ec-90a55863714e")
+	)
+	(wire
+		(pts
+			(xy 195.58 157.48) (xy 195.58 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51fe2ec4-0501-400b-9c95-e9282bff1e14")
+	)
+	(wire
+		(pts
+			(xy 160.02 157.48) (xy 165.1 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53183057-c246-48f3-aa6e-5362a4c3fe59")
+	)
+	(wire
+		(pts
+			(xy 165.1 167.64) (xy 160.02 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53f09a5d-cbaf-4b06-a0ff-f3cb7ac62484")
+	)
+	(wire
+		(pts
+			(xy 190.5 137.16) (xy 195.58 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "604733b6-6ee1-4491-9c15-c096a2989ea6")
+	)
+	(wire
+		(pts
+			(xy 215.9 218.44) (xy 215.9 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6199ed0e-875d-474c-a434-5bf74a87161d")
+	)
+	(wire
+		(pts
+			(xy 165.1 228.6) (xy 160.02 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6907eb98-42d0-4c86-857d-05b515ae88f0")
+	)
+	(wire
+		(pts
+			(xy 246.38 167.64) (xy 264.16 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "701bf88c-0ac4-49d2-b048-133f0eba8af1")
+	)
+	(wire
+		(pts
+			(xy 215.9 119.38) (xy 238.76 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71551d2e-efa3-41d9-ab23-59919a8a8c76")
+	)
+	(wire
+		(pts
+			(xy 195.58 165.1) (xy 195.58 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76aa8a94-a8ff-4aec-9429-f2f7c32d6ecd")
+	)
+	(wire
+		(pts
+			(xy 238.76 175.26) (xy 238.76 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76aff0f9-888a-487c-8000-5a6c45a88b85")
+	)
+	(wire
+		(pts
+			(xy 165.1 198.12) (xy 160.02 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "776ac2e9-15f7-4844-991a-63178889d1d8")
+	)
+	(wire
+		(pts
+			(xy 238.76 147.32) (xy 246.38 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "790aad24-237f-4b2b-a220-10453a4c91b0")
+	)
+	(wire
+		(pts
+			(xy 246.38 157.48) (xy 246.38 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83682e90-152d-4121-96f8-bfd0eef7f7cc")
+	)
+	(wire
+		(pts
+			(xy 215.9 147.32) (xy 238.76 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bf62b07-ba3c-4efb-bd44-a9b115f7974e")
+	)
+	(wire
+		(pts
+			(xy 205.74 259.08) (xy 205.74 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91cf720c-3604-4bad-8305-80d47c839def")
+	)
+	(wire
+		(pts
+			(xy 161.29 127) (xy 165.1 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9341791a-80c4-4ae6-8925-e20f391235fe")
+	)
+	(wire
+		(pts
+			(xy 215.9 248.92) (xy 215.9 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f6927ec-8b3f-4fd0-b4eb-99ac56d55458")
+	)
+	(wire
+		(pts
+			(xy 246.38 119.38) (xy 264.16 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0488332-c75c-483f-b1d9-c1814fbdb38c")
+	)
+	(wire
+		(pts
+			(xy 190.5 198.12) (xy 205.74 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a560ace9-b28b-4fdc-a7e6-d0ca684e4cf8")
+	)
+	(wire
+		(pts
+			(xy 195.58 187.96) (xy 195.58 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab4943e0-e79c-40ed-bddf-04e5983d2723")
+	)
+	(wire
+		(pts
+			(xy 228.6 175.26) (xy 238.76 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b163c0bf-732d-47c9-8f57-cce30de3b85f")
+	)
+	(wire
+		(pts
+			(xy 274.32 142.24) (xy 274.32 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b40799e0-bc5a-47c5-a248-10ae13e21cee")
+	)
+	(wire
+		(pts
+			(xy 274.32 190.5) (xy 294.64 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b563bbda-3d00-49a0-84c3-25b3c0035a24")
+	)
+	(wire
+		(pts
+			(xy 215.9 157.48) (xy 190.5 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b580341d-bbb3-4899-9f43-3aa5c8c2705f")
+	)
+	(wire
+		(pts
+			(xy 238.76 119.38) (xy 238.76 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b622aa01-1047-48d2-aae4-c04dc63d769b")
+	)
+	(wire
+		(pts
+			(xy 215.9 157.48) (xy 215.9 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6d6b9a8-d5e2-4cbd-9802-bee1469c9e4a")
+	)
+	(wire
+		(pts
+			(xy 195.58 127) (xy 215.9 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b76be655-b315-4203-9388-e00be1a737a3")
+	)
+	(wire
+		(pts
+			(xy 274.32 187.96) (xy 274.32 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc363f4c-0289-402b-a6c9-88842a1d689f")
+	)
+	(wire
+		(pts
+			(xy 246.38 119.38) (xy 246.38 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c476d11d-b891-4777-a2fb-aea48317fbcb")
+	)
+	(wire
+		(pts
+			(xy 160.02 187.96) (xy 165.1 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4e925f5-ae31-4bf1-b9e5-9312aebe7466")
+	)
+	(wire
+		(pts
+			(xy 160.02 248.92) (xy 165.1 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d59b827f-32bd-46e0-974a-508803c98352")
+	)
+	(wire
+		(pts
+			(xy 160.02 228.6) (xy 160.02 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5bffffb-0a74-494f-86b7-967c89f1bc21")
+	)
+	(wire
+		(pts
+			(xy 160.02 167.64) (xy 160.02 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6efd412-69de-47e3-a0fe-0054a19c8168")
+	)
+	(wire
+		(pts
+			(xy 228.6 129.54) (xy 246.38 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8985ec9-3ee7-4c67-bd7d-43439f2ee67f")
+	)
+	(wire
+		(pts
+			(xy 190.5 127) (xy 195.58 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8f6de84-d319-4cf4-8bf4-01e7e6fc7e3d")
+	)
+	(wire
+		(pts
+			(xy 190.5 228.6) (xy 205.74 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da7c1328-cd42-4eda-8758-b8237c2f4fc7")
+	)
+	(wire
+		(pts
+			(xy 195.58 256.54) (xy 195.58 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc5057e7-e1f9-4c7c-a301-5b768fb93459")
+	)
+	(wire
+		(pts
+			(xy 205.74 167.64) (xy 205.74 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddec3b38-d840-4125-9e60-191b74204301")
+	)
+	(wire
+		(pts
+			(xy 195.58 195.58) (xy 195.58 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de54f73b-52c2-407d-82ea-9b84e60786dd")
+	)
+	(wire
+		(pts
+			(xy 228.6 167.64) (xy 246.38 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e882ed35-f83c-4ac1-bf13-9b37ef261faa")
+	)
+	(wire
+		(pts
+			(xy 246.38 129.54) (xy 264.16 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef2bfaad-e12e-4c9d-8b8e-1ee9ca676239")
+	)
+	(wire
+		(pts
+			(xy 195.58 137.16) (xy 205.74 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef4f2d7c-b2bb-482b-b735-4e38a6d47ca5")
+	)
+	(wire
+		(pts
+			(xy 160.02 137.16) (xy 160.02 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8a21bbd-331c-4e57-a6ad-b8276b943f89")
+	)
+	(wire
+		(pts
+			(xy 215.9 119.38) (xy 215.9 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8f7293e-cdbf-428c-8088-d2b3109a1188")
+	)
+	(wire
+		(pts
+			(xy 246.38 127) (xy 246.38 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb8602e0-8f00-4f47-9c93-8dac20f8e13a")
+	)
+	(wire
+		(pts
+			(xy 215.9 187.96) (xy 190.5 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe13b497-43c0-48d0-8f8b-46f054583405")
+	)
+	(wire
+		(pts
+			(xy 152.4 127) (xy 156.21 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe7dc3c5-4dcc-456b-ba41-cc2e33c35ecc")
+	)
+	(wire
+		(pts
+			(xy 215.9 101.6) (xy 215.9 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffe23a35-c224-46e0-8c14-fe8367db913a")
+	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 218.44 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "011b2274-49f7-478b-abfc-1af41868b37b")
+	)
+	(hierarchical_label "ENCODER_A"
+		(shape input)
+		(at 228.6 167.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0b028d68-b7ee-4408-bc54-c0ef9da7287c")
+	)
+	(hierarchical_label "I2C_SDA"
+		(shape input)
+		(at 228.6 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "136a5b64-2991-4812-93d6-2507548d4238")
+	)
+	(hierarchical_label "ENCODER_B"
+		(shape input)
+		(at 228.6 175.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "24732ff9-1505-46b1-926b-8067c7c53f08")
+	)
+	(hierarchical_label "I2C_SCL"
+		(shape input)
+		(at 228.6 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3ffd3202-4ab6-411b-9a05-4d85b668be6b")
+	)
+	(hierarchical_label "PICO_RESET"
+		(shape input)
+		(at 228.6 162.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b05e7ab3-968e-486b-974f-f9391c3a54c9")
+	)
+	(hierarchical_label "587_CTRL"
+		(shape input)
+		(at 152.4 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dfd020ab-d519-4fb7-ae55-8cf79fa9db44")
+	)
+	(symbol
+		(lib_id "resistors-added:template-resistor-small-us")
+		(at 158.75 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "05cb2ba0-a635-46a9-a788-e52c38dffd28")
+		(property "Reference" "R27"
+			(at 158.75 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RES"
+			(at 158.75 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lsc-resistor:R_RK37H_0402_1005Metric_KOA"
+			(at 158.75 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES $RESISTANCE OHM $TOLERANCE% $WATTSW $PKGMETRIC"
+			(at 158.75 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 158.75 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "template-resistor-small-us"
+			(at 158.75 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1a6ac3ba-0e4d-473a-b13e-ff603e143693")
+		)
+		(pin "2"
+			(uuid "db879cd0-d068-453b-932c-a8c09b247a9e")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "leds-added:587-1024-147F")
+		(at 165.1 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "0e5b375b-3c0f-4cb6-ad6d-94a696789844")
+		(property "Reference" "LD2"
+			(at 177.8 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "587-1024-147F"
+			(at 177.8 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lsc-led-rgb-smd:587-1024_DIA"
+			(at 189.23 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.557/Dialight_datasheet_587-1024-147F_Addressable_RGB.pdf"
+			(at 189.23 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "587 Series Addressable SMD RGB LED, 2020 Package 0.9mm Height, Single Wire"
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.9mm"
+			(at 189.23 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Dialight"
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "587-1024-147F"
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage - Supply" "3.3 - 5.5V"
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current - Supply" "1mA"
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Current" "16.75mA (limit)"
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" ""
+			(at 177.8 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 108 113 196 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "3cbd0b2f-bc7e-4ac0-a27c-e03a0861dcae")
+		)
+		(pin "4"
+			(uuid "c625fadb-b096-4122-8d04-9011d45bca62")
+		)
+		(pin "2"
+			(uuid "3f0ee1d3-64df-4bc2-9108-a3d865f9398e")
+		)
+		(pin "3"
+			(uuid "2306f240-9a59-4509-925e-b320e483035e")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "LD2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "resistors-added:template-resistor-small-us")
+		(at 246.38 154.94 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "17ed584b-3049-4a16-a99a-d6a25c24ef52")
+		(property "Reference" "R31"
+			(at 248.92 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RES"
+			(at 248.92 156.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "lsc-resistor:R_RK37H_0402_1005Metric_KOA"
+			(at 246.38 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES $RESISTANCE OHM $TOLERANCE% $WATTSW $PKGMETRIC"
+			(at 246.38 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 246.38 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "template-resistor-small-us"
+			(at 246.38 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f6d7384-68f7-4534-8c66-37ac7981ddf7")
+		)
+		(pin "2"
+			(uuid "4e8d07d9-482c-45ff-a217-e2c826345288")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "resistors-added:template-resistor-small-us")
+		(at 238.76 154.94 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "338f3459-2e6a-4bee-a778-8d494d533dae")
+		(property "Reference" "R29"
+			(at 241.3 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RES"
+			(at 241.3 156.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "lsc-resistor:R_RK37H_0402_1005Metric_KOA"
+			(at 238.76 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES $RESISTANCE OHM $TOLERANCE% $WATTSW $PKGMETRIC"
+			(at 238.76 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 238.76 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "template-resistor-small-us"
+			(at 238.76 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f6d7384-68f7-4534-8c66-37ac7981ddf8")
+		)
+		(pin "2"
+			(uuid "4e8d07d9-482c-45ff-a217-e2c826345289")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "bad-symbol-edits:GND")
+		(at 205.74 266.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "3c6e2011-e45d-4a87-8f17-2ba92715701d")
+		(property "Reference" "#GND06"
+			(at 205.74 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 205.74 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\""
+			(at 205.74 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "GND"
+			(at 205.74 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8e3a7b8-a722-4fe3-9365-5270f2dce258")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "#GND06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "resistors-added:template-resistor-small-us")
+		(at 238.76 124.46 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "51ae82eb-5067-4cb7-839b-3e08ca0b8fc7")
+		(property "Reference" "R28"
+			(at 241.3 123.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RES"
+			(at 241.3 125.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "lsc-resistor:R_RK37H_0402_1005Metric_KOA"
+			(at 238.76 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES $RESISTANCE OHM $TOLERANCE% $WATTSW $PKGMETRIC"
+			(at 238.76 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 238.76 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "template-resistor-small-us"
+			(at 238.76 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "388c520a-e8e0-4070-b748-6f0c7e2db8a1")
+		)
+		(pin "2"
+			(uuid "adec475f-8775-4998-a010-99ca53640af2")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "capacitors-added:GRM18_MURATA")
+		(at 195.58 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "612ec05a-9727-4e21-802f-3e1a41c71114")
+		(property "Reference" "C10"
+			(at 198.12 190.6269 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 198.12 193.1669 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lsc-capacitors-added:C_GRM18_0603_1608Metric_MURATA"
+			(at 195.58 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "Chip Multilayer Ceramic Capacitors for Consumer Electronics & Industrial Equipment"
+			(at 195.58 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 198.12 198.374 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Symbol Name" ""
+			(at 198.12 197.104 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 198.12 195.834 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "AEC-Q200 / -"
+			(at 195.58 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±%"
+			(at 195.58 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" " "
+			(at 195.58 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "16V"
+			(at 198.12 195.707 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "fcc87be9-165f-473a-9045-ab6e94c0f791")
+		)
+		(pin "2"
+			(uuid "1b1607dd-a287-4c3a-ab9a-d2643008e6b2")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "resistors-added:template-resistor-small-us")
+		(at 256.54 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "7646e3c8-d30c-41a1-a698-c8ad65fe7729")
+		(property "Reference" "R32"
+			(at 256.54 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RES"
+			(at 256.54 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lsc-resistor:R_RK37H_0402_1005Metric_KOA"
+			(at 256.54 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES $RESISTANCE OHM $TOLERANCE% $WATTSW $PKGMETRIC"
+			(at 256.54 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 256.54 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "template-resistor-small-us"
+			(at 256.54 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de69f13f-c93e-4cbe-9d5f-f5b93d8595e1")
+		)
+		(pin "2"
+			(uuid "3992edd2-cef3-4a83-82cc-c5a986a5a63c")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "capacitors-added:GRM18_MURATA")
+		(at 195.58 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "809b25db-b06a-4f61-95da-f36fd27a5e59")
+		(property "Reference" "C8"
+			(at 198.12 129.6669 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 198.12 132.2069 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lsc-capacitors-added:C_GRM18_0603_1608Metric_MURATA"
+			(at 195.58 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "Chip Multilayer Ceramic Capacitors for Consumer Electronics & Industrial Equipment"
+			(at 195.58 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 198.12 137.414 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Symbol Name" ""
+			(at 198.12 136.144 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 198.12 134.874 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "AEC-Q200 / -"
+			(at 195.58 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±%"
+			(at 195.58 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" " "
+			(at 195.58 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "16V"
+			(at 198.12 134.747 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "e6d28451-f285-4bad-bd74-56eb442b91a2")
+		)
+		(pin "2"
+			(uuid "a76baee4-29ff-4d62-bea9-e35338cd8a4a")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "switches-added:PEC12R-4120F-S0012_BOURNS")
+		(at 276.86 167.64 0)
+		(unit 1)
+		(body_style 2)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "823a66ce-17f9-4812-9b8e-f21b939eb461")
+		(property "Reference" "S1"
+			(at 276.86 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PEC12R-4120F-S0012_BOURNS"
+			(at 276.86 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PEC12R-4120F-S0012:XDCR_PEC12R-4120F-S0012"
+			(at 276.86 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf"
+			(at 276.86 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Rotary Encoder Incremental 12 Quadrature (Incremental) Horizontal"
+			(at 276.86 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 276.86 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part Number" "PEC12R-4120F-S0012"
+			(at 276.86 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Actuator Type" "6mm Dia Flatted End"
+			(at 276.86 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage - Rated" "?5V"
+			(at 276.86 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current - Rated" "10mA @ 5VDC"
+			(at 276.86 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pulses per Revolution" "12"
+			(at 276.86 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contact Resistance" "100mΩ @ 5VDC"
+			(at 276.86 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "B"
+			(uuid "b87543c7-f448-40da-9c0c-170fbd2753e7")
+		)
+		(pin "A"
+			(uuid "a021e512-ace8-406f-9502-641744fbe271")
+		)
+		(pin "[SH1,SH2]"
+			(uuid "4afc5dc2-0a27-4c5b-93ad-64146f83a01c")
+		)
+		(pin "1"
+			(uuid "7ab15f8f-6b6f-4e0b-a6ea-2b6520d3a715")
+		)
+		(pin "2"
+			(uuid "f74926ca-ea00-4980-ab6d-c4205eddfcdf")
+		)
+		(pin "C"
+			(uuid "7d654e4f-7463-4d4e-886f-2291a54365c9")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "resistors-added:template-resistor-small-us")
+		(at 246.38 124.46 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "88b211ae-c917-427d-a2bc-078c37868e94")
+		(property "Reference" "R30"
+			(at 248.92 123.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RES"
+			(at 248.92 125.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "lsc-resistor:R_RK37H_0402_1005Metric_KOA"
+			(at 246.38 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES $RESISTANCE OHM $TOLERANCE% $WATTSW $PKGMETRIC"
+			(at 246.38 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 246.38 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "template-resistor-small-us"
+			(at 246.38 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab6d2fb5-decc-4463-bd69-177316501d58")
+		)
+		(pin "2"
+			(uuid "51231c11-601a-4fb7-9dbb-0735824fdb84")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "capacitors-added:GRM18_MURATA")
+		(at 195.58 254 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "a399b88b-d8f1-4cd5-b12d-e000f3a74094")
+		(property "Reference" "C12"
+			(at 198.12 251.5869 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 198.12 254.1269 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lsc-capacitors-added:C_GRM18_0603_1608Metric_MURATA"
+			(at 195.58 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "Chip Multilayer Ceramic Capacitors for Consumer Electronics & Industrial Equipment"
+			(at 195.58 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 198.12 259.334 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Symbol Name" ""
+			(at 198.12 258.064 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 198.12 256.794 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "AEC-Q200 / -"
+			(at 195.58 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±%"
+			(at 195.58 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" " "
+			(at 195.58 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "16V"
+			(at 198.12 256.667 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "cf557b95-1d83-41a9-a329-8670efbebf25")
+		)
+		(pin "2"
+			(uuid "7387419f-57d4-4392-a524-74061489ae6b")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "displays-added:ER-OLEDM0.96-1x-I2C_EASTRISING")
+		(at 264.16 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "b490bf9f-2616-4309-859d-bbabaa563eca")
+		(property "Reference" "U4"
+			(at 281.94 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OLEDM0.96-1YB-I2C"
+			(at 281.94 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lsc-module:ER-OLEDM0.96_1x-I2C_ALT_EASTRISING"
+			(at 282.194 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.buydisplay.com/download/manual/ER-OLEDM0.96-1_Series_Datasheet.pdf"
+			(at 306.832 134.112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SSD1306 OLED module, 0.96 inch, 128x64, I2C"
+			(at 290.83 136.144 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a5f4ae25-16a3-40ee-a7da-ad3ac67a0968")
+		)
+		(pin "3"
+			(uuid "a3600af8-1a58-4a3c-89ee-853396b17d63")
+		)
+		(pin "4"
+			(uuid "64d98603-f9fe-43c7-b743-16cc9a7ce18a")
+		)
+		(pin "1"
+			(uuid "c57e9fa6-51ec-4fd9-8de4-973014df7117")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "leds-added:587-1024-147F")
+		(at 165.1 248.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "b4e975b3-2d36-4254-960d-17bbce9e2581")
+		(property "Reference" "LD6"
+			(at 177.8 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "587-1024-147F"
+			(at 177.8 241.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lsc-led-rgb-smd:587-1024_DIA"
+			(at 189.23 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.557/Dialight_datasheet_587-1024-147F_Addressable_RGB.pdf"
+			(at 189.23 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "587 Series Addressable SMD RGB LED, 2020 Package 0.9mm Height, Single Wire"
+			(at 165.1 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.9mm"
+			(at 189.23 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Dialight"
+			(at 165.1 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "587-1024-147F"
+			(at 165.1 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage - Supply" "3.3 - 5.5V"
+			(at 165.1 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current - Supply" "1mA"
+			(at 165.1 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Current" "16.75mA (limit)"
+			(at 165.1 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" ""
+			(at 177.8 241.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 108 113 196 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "4e5bb533-ec59-4911-b4e2-f6ef9101120a")
+		)
+		(pin "4"
+			(uuid "e58ca95c-24d4-4bac-85fe-66f9cd01ed52")
+		)
+		(pin "2"
+			(uuid "90ee4e97-0da4-4695-9bed-c60ff3ad27ac")
+		)
+		(pin "3"
+			(uuid "289a404a-d6d6-4ad4-b353-b3babb2fe832")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "LD6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "bad-symbol-edits:GND")
+		(at 284.48 196.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "be20ac41-e64c-4128-881e-a24c81a4dc5f")
+		(property "Reference" "#GND08"
+			(at 284.48 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 284.48 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.48 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 284.48 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\""
+			(at 284.48 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "GND"
+			(at 284.48 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cd35836e-b603-4636-952d-dbf213329284")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "#GND08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "leds-added:587-1024-147F")
+		(at 165.1 187.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "c304335e-8bdf-40e7-b02f-09b9d585df48")
+		(property "Reference" "LD4"
+			(at 177.8 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "587-1024-147F"
+			(at 177.8 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lsc-led-rgb-smd:587-1024_DIA"
+			(at 189.23 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.557/Dialight_datasheet_587-1024-147F_Addressable_RGB.pdf"
+			(at 189.23 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "587 Series Addressable SMD RGB LED, 2020 Package 0.9mm Height, Single Wire"
+			(at 165.1 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.9mm"
+			(at 189.23 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Dialight"
+			(at 165.1 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "587-1024-147F"
+			(at 165.1 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage - Supply" "3.3 - 5.5V"
+			(at 165.1 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current - Supply" "1mA"
+			(at 165.1 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Current" "16.75mA (limit)"
+			(at 165.1 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" ""
+			(at 177.8 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 108 113 196 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "4e5bb533-ec59-4911-b4e2-f6ef9101120b")
+		)
+		(pin "4"
+			(uuid "e58ca95c-24d4-4bac-85fe-66f9cd01ed53")
+		)
+		(pin "2"
+			(uuid "90ee4e97-0da4-4695-9bed-c60ff3ad27ad")
+		)
+		(pin "3"
+			(uuid "289a404a-d6d6-4ad4-b353-b3babb2fe833")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "LD4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "bad-symbol-edits:GND")
+		(at 274.32 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "da69909d-e3b1-4458-997f-4e5e37dea48a")
+		(property "Reference" "#GND07"
+			(at 274.32 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 274.32 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\""
+			(at 274.32 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "GND"
+			(at 274.32 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "39db69b3-28d9-489f-8304-f429901ad862")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "#GND07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "capacitors-added:GRM18_MURATA")
+		(at 195.58 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "da7182f5-9b22-4cbc-abde-d164a1177654")
+		(property "Reference" "C9"
+			(at 198.12 160.1469 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 198.12 162.6869 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lsc-capacitors-added:C_GRM18_0603_1608Metric_MURATA"
+			(at 195.58 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "Chip Multilayer Ceramic Capacitors for Consumer Electronics & Industrial Equipment"
+			(at 195.58 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 198.12 167.894 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Symbol Name" ""
+			(at 198.12 166.624 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 198.12 165.354 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "AEC-Q200 / -"
+			(at 195.58 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±%"
+			(at 195.58 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" " "
+			(at 195.58 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "16V"
+			(at 198.12 165.227 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "a3497664-f80e-45e8-9f66-9ae890ddf14e")
+		)
+		(pin "2"
+			(uuid "f6f9476f-25e6-4201-9a70-c90228d330d3")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "capacitors-added:GRM18_MURATA")
+		(at 195.58 223.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "dbf82e10-b2c0-4af7-b890-7aafea85e0e6")
+		(property "Reference" "C11"
+			(at 198.12 221.1069 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 198.12 223.6469 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lsc-capacitors-added:C_GRM18_0603_1608Metric_MURATA"
+			(at 195.58 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "Chip Multilayer Ceramic Capacitors for Consumer Electronics & Industrial Equipment"
+			(at 195.58 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 198.12 228.854 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Symbol Name" ""
+			(at 198.12 227.584 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 198.12 226.314 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "AEC-Q200 / -"
+			(at 195.58 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±%"
+			(at 195.58 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" " "
+			(at 195.58 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "16V"
+			(at 198.12 226.187 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "3511c066-fc4c-4703-b047-12a57413a32d")
+		)
+		(pin "2"
+			(uuid "cc7cfd5b-c1fe-497c-b263-3622d2a232dc")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "leds-added:587-1024-147F")
+		(at 165.1 218.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "dc663378-892b-4133-a622-1904dc322927")
+		(property "Reference" "LD5"
+			(at 177.8 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "587-1024-147F"
+			(at 177.8 210.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lsc-led-rgb-smd:587-1024_DIA"
+			(at 189.23 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.557/Dialight_datasheet_587-1024-147F_Addressable_RGB.pdf"
+			(at 189.23 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "587 Series Addressable SMD RGB LED, 2020 Package 0.9mm Height, Single Wire"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.9mm"
+			(at 189.23 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Dialight"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "587-1024-147F"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage - Supply" "3.3 - 5.5V"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current - Supply" "1mA"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Current" "16.75mA (limit)"
+			(at 165.1 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" ""
+			(at 177.8 210.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 108 113 196 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "4e5bb533-ec59-4911-b4e2-f6ef9101120c")
+		)
+		(pin "4"
+			(uuid "e58ca95c-24d4-4bac-85fe-66f9cd01ed54")
+		)
+		(pin "2"
+			(uuid "90ee4e97-0da4-4695-9bed-c60ff3ad27ae")
+		)
+		(pin "3"
+			(uuid "289a404a-d6d6-4ad4-b353-b3babb2fe834")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "LD5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "leds-added:587-1024-147F")
+		(at 165.1 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "fbb7f2f7-5677-4d51-bf1c-c288a608acf1")
+		(property "Reference" "LD3"
+			(at 177.8 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "587-1024-147F"
+			(at 177.8 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lsc-led-rgb-smd:587-1024_DIA"
+			(at 189.23 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.557/Dialight_datasheet_587-1024-147F_Addressable_RGB.pdf"
+			(at 189.23 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "587 Series Addressable SMD RGB LED, 2020 Package 0.9mm Height, Single Wire"
+			(at 165.1 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.9mm"
+			(at 189.23 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Dialight"
+			(at 165.1 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "587-1024-147F"
+			(at 165.1 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage - Supply" "3.3 - 5.5V"
+			(at 165.1 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current - Supply" "1mA"
+			(at 165.1 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Current" "16.75mA (limit)"
+			(at 165.1 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" ""
+			(at 177.8 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 108 113 196 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "4e5bb533-ec59-4911-b4e2-f6ef9101120d")
+		)
+		(pin "4"
+			(uuid "e58ca95c-24d4-4bac-85fe-66f9cd01ed55")
+		)
+		(pin "2"
+			(uuid "90ee4e97-0da4-4695-9bed-c60ff3ad27af")
+		)
+		(pin "3"
+			(uuid "289a404a-d6d6-4ad4-b353-b3babb2fe835")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "LD3")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
