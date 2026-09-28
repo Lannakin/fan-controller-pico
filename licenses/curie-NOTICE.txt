@@ -1,0 +1,16 @@
+Curie - Copyright (c) 2018 Akshay Oppiliappan (nerdypepper@tuta.io)
+
+--------------------------------------------------------------------------------
+
+the following fonts are licensed under SIL OPEN FONT LICENSE VERSION 1.1:
+
+curieBold
+curieItalic
+curieMedium
+
+--------------------------------------------------------------------------------
+
+they can be acquired and starred at:
+
+https://github.com/oppiliappan/curie
+

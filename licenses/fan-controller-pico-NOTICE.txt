@@ -1,0 +1,15 @@
+copyright (c) Lannakin / LiterallySomeCat https://github.com/Lannakin 2026
+
+--------------------------------------------------------------------------------
+
+the following project in the project root directory, excluding the embedded
+fonts (curieBold/Medium/Italic, scientifica, webplus_toshibasat_8/9x14),
+is licensed under CC-BY-SA 4.0:
+
+fan-controller-txu0204-pico
+
+--------------------------------------------------------------------------------
+
+this horrible repository may be found here:
+
+https://github.com/Lannakin/fan-controller-pico
