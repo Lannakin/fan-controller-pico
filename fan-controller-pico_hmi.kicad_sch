@@ -5,7 +5,7 @@
 	(uuid "00e9a4b1-0b59-4f9f-bdd5-7ad643f28a92")
 	(paper "A3")
 	(title_block
-		(rev "3.0.0")
+		(rev "0.0.0")
 		(company "${COMPANY_LOL}")
 	)
 	(lib_symbols
@@ -1150,6 +1150,395 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "lib_fan-controller-txu0204-pico:connector_hmi-board-in"
+			(pin_names
+				(offset 1.651)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CN"
+				(at 10.16 6.35 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "HMI"
+				(at 10.16 3.81 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "connector_hmi-board-in_1_1"
+				(rectangle
+					(start 3.81 1.27)
+					(end 16.51 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 5.08 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 5.08 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -4.953)
+					(end 5.08 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -7.493)
+					(end 5.08 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -10.033)
+					(end 5.08 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.51 -0.127)
+					(end 15.24 0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.51 -2.667)
+					(end 15.24 -2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.51 -5.207)
+					(end 15.24 -4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.51 -7.747)
+					(end 15.24 -7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.51 -10.287)
+					(end 15.24 -10.033)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 0)
+					(length 3.81)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -5.08 0)
+					(length 3.81)
+					(name "VSYS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 0)
+					(length 3.81)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -10.16 0)
+					(length 3.81)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -10.16 180)
+					(length 3.81)
+					(name "ECA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -7.62 180)
+					(length 3.81)
+					(name "ECB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -5.08 180)
+					(length 3.81)
+					(name "RST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -2.54 180)
+					(length 3.81)
+					(name "RGB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 0 180)
+					(length 3.81)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "resistors-added:template-resistor-small-us"
 			(pin_numbers
 				(hide yes)
@@ -1321,7 +1710,7 @@
 					)
 				)
 			)
-			(property "Footprint" "PEC12R-4120F-S0012:XDCR_PEC12R-4120F-S0012"
+			(property "Footprint" "lsc-switch:XDCR_PEC12R-4120F-S0012_BOURNS"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1789,6 +2178,10 @@
 		(uuid "fb6f4f14-a293-48a0-8a74-c85aeca83cdd")
 	)
 	(no_connect
+		(at 193.04 77.47)
+		(uuid "523955f5-53fb-49d7-93dd-4cd803749a71")
+	)
+	(no_connect
 		(at 165.1 259.08)
 		(uuid "bbb4e053-e9df-4e44-84d2-e3b7154c6d46")
 	)
@@ -1861,6 +2254,16 @@
 			(type default)
 		)
 		(uuid "0eb6a206-8d1a-4f2c-9be1-6b776d7902cb")
+	)
+	(wire
+		(pts
+			(xy 198.12 87.63) (xy 193.04 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f182953-df18-4d38-8a31-edb6041f05fa")
 	)
 	(wire
 		(pts
@@ -1991,6 +2394,26 @@
 			(type default)
 		)
 		(uuid "2b711032-04c0-4323-bcf8-7bc805368853")
+	)
+	(wire
+		(pts
+			(xy 167.64 85.09) (xy 172.72 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30958653-041a-4d24-8105-9ae01da34c19")
+	)
+	(wire
+		(pts
+			(xy 167.64 82.55) (xy 172.72 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31716b34-4409-40e8-913f-775df57d2680")
 	)
 	(wire
 		(pts
@@ -2204,6 +2627,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 85.09) (xy 193.04 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77ba1a0d-bd61-46e5-b680-97a78378fd92")
+	)
+	(wire
+		(pts
 			(xy 238.76 147.32) (xy 246.38 147.32)
 		)
 		(stroke
@@ -2221,6 +2654,26 @@
 			(type default)
 		)
 		(uuid "83682e90-152d-4121-96f8-bfd0eef7f7cc")
+	)
+	(wire
+		(pts
+			(xy 198.12 82.55) (xy 193.04 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89410986-df52-4785-89a1-182209205d0b")
+	)
+	(wire
+		(pts
+			(xy 167.64 87.63) (xy 172.72 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ada7141-473f-4df0-8d3a-78de46e13a6b")
 	)
 	(wire
 		(pts
@@ -2251,6 +2704,16 @@
 			(type default)
 		)
 		(uuid "9341791a-80c4-4ae6-8925-e20f391235fe")
+	)
+	(wire
+		(pts
+			(xy 167.64 77.47) (xy 172.72 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "967dd8b6-baec-483f-a31e-6787cd1ad79f")
 	)
 	(wire
 		(pts
@@ -2291,6 +2754,16 @@
 			(type default)
 		)
 		(uuid "ab4943e0-e79c-40ed-bddf-04e5983d2723")
+	)
+	(wire
+		(pts
+			(xy 198.12 80.01) (xy 193.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adf6a4d9-78bb-4e6e-ac98-c0ddd2ecbb79")
 	)
 	(wire
 		(pts
@@ -2361,6 +2834,16 @@
 			(type default)
 		)
 		(uuid "b76be655-b315-4203-9388-e00be1a737a3")
+	)
+	(wire
+		(pts
+			(xy 167.64 80.01) (xy 172.72 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b98bd9b2-1743-4b80-a3a1-467fbe32d805")
 	)
 	(wire
 		(pts
@@ -2572,6 +3055,17 @@
 		)
 		(uuid "ffe23a35-c224-46e0-8c14-fe8367db913a")
 	)
+	(hierarchical_label "PICO_RESET"
+		(shape input)
+		(at 198.12 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "00c5205a-a410-4c25-b3e2-8ae86f814e1f")
+	)
 	(hierarchical_label "3V3"
 		(shape input)
 		(at 218.44 101.6 0)
@@ -2605,6 +3099,17 @@
 		)
 		(uuid "136a5b64-2991-4812-93d6-2507548d4238")
 	)
+	(hierarchical_label "VSYS"
+		(shape input)
+		(at 167.64 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1cc0f92a-6034-40c1-a25b-59a73ed9f36a")
+	)
 	(hierarchical_label "ENCODER_B"
 		(shape input)
 		(at 228.6 175.26 180)
@@ -2615,6 +3120,17 @@
 			(justify right)
 		)
 		(uuid "24732ff9-1505-46b1-926b-8067c7c53f08")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 167.64 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3589050c-60fa-4bef-b8f4-a88fb357565a")
 	)
 	(hierarchical_label "I2C_SCL"
 		(shape input)
@@ -2627,6 +3143,17 @@
 		)
 		(uuid "3ffd3202-4ab6-411b-9a05-4d85b668be6b")
 	)
+	(hierarchical_label "587_CTRL"
+		(shape input)
+		(at 198.12 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "597fed00-293f-4226-8259-8c4721d78283")
+	)
 	(hierarchical_label "PICO_RESET"
 		(shape input)
 		(at 228.6 162.56 180)
@@ -2638,6 +3165,39 @@
 		)
 		(uuid "b05e7ab3-968e-486b-974f-f9391c3a54c9")
 	)
+	(hierarchical_label "I2C_SCL"
+		(shape input)
+		(at 167.64 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b570df6f-4303-4a69-b83c-328fad94f835")
+	)
+	(hierarchical_label "I2C_SDA"
+		(shape input)
+		(at 167.64 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d0af510e-a7a7-4901-b2eb-6378dcd563a1")
+	)
+	(hierarchical_label "ENCODER_A"
+		(shape input)
+		(at 198.12 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d216f99c-9e4d-4197-b946-62e04a62a303")
+	)
 	(hierarchical_label "587_CTRL"
 		(shape input)
 		(at 152.4 127 180)
@@ -2648,6 +3208,28 @@
 			(justify right)
 		)
 		(uuid "dfd020ab-d519-4fb7-ae55-8cf79fa9db44")
+	)
+	(hierarchical_label "ENCODER_B"
+		(shape input)
+		(at 198.12 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef128374-6169-4d01-b9e4-a783adb275b6")
+	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 167.64 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ffb8981a-b14a-4663-a359-48ad851d9ac0")
 	)
 	(symbol
 		(lib_id "resistors-added:template-resistor-small-us")
@@ -3214,6 +3796,110 @@
 			(project "fan-controller-txu0204-pico"
 				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
 					(reference "#GND06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lib_fan-controller-txu0204-pico:connector_hmi-board-in")
+		(at 172.72 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "43b7060c-0b10-49bc-84ca-fa67e1586c9f")
+		(property "Reference" "CN4"
+			(at 182.88 71.12 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HMI"
+			(at 182.88 73.66 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 172.72 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "10"
+			(uuid "6e8a8463-8de7-4edd-a987-1bfe99931f97")
+		)
+		(pin "3"
+			(uuid "ed5a6202-1ed0-4ffd-9aff-f129f4afb6c9")
+		)
+		(pin "4"
+			(uuid "da625fab-6f06-4dee-b30b-ddd635666ee3")
+		)
+		(pin "7"
+			(uuid "6c3bd173-44f0-40ef-aec0-e6fed11568d2")
+		)
+		(pin "8"
+			(uuid "e25b4b10-9999-440a-854c-93ffaedb3cd3")
+		)
+		(pin "9"
+			(uuid "da8d6ab6-c6aa-4d09-9443-ed24afba8d8d")
+		)
+		(pin "6"
+			(uuid "77e515f9-cf6d-4175-8321-5ed44eaeaaf6")
+		)
+		(pin "2"
+			(uuid "5246c895-1b64-45dd-9028-1f52f9408223")
+		)
+		(pin "1"
+			(uuid "ab41b97b-d9e2-4065-a580-2fc74a6dd8e7")
+		)
+		(pin "5"
+			(uuid "6bf3089d-1fe0-446d-b680-9d0459db6a6e")
+		)
+		(instances
+			(project "fan-controller-txu0204-pico"
+				(path "/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c"
+					(reference "CN4")
 					(unit 1)
 				)
 			)
@@ -3787,7 +4473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PEC12R-4120F-S0012:XDCR_PEC12R-4120F-S0012"
+		(property "Footprint" "lsc-switch:XDCR_PEC12R-4120F-S0012_BOURNS"
 			(at 276.86 167.64 0)
 			(hide yes)
 			(show_name no)

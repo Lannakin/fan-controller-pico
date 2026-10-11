@@ -60,13 +60,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.16,
+          "min_clearance": 0.2,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
-          "pad_connection": 2,
-          "remove_islands": 1,
+          "min_thickness": 0.16,
+          "pad_connection": 3,
+          "remove_islands": 0,
           "thermal_relief_gap": 0.2,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_spoke_width": 0.4
         }
       },
       "diff_pair_dimensions": [
@@ -167,7 +167,7 @@
       },
       "teardrop_options": [
         {
-          "td_onpthpad": false,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": false,
           "td_ontrackend": false,
@@ -272,7 +272,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "3.0.0"
+      "sch_revision": "0.0.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -294,64 +294,20 @@
   "erc": {
     "erc_exclusions": [
       [
-        "footprint_link_issues|2768600|1676400|823a66ce-17f9-4812-9b8e-f21b939eb461|00000000-0000-0000-0000-000000000000|||",
+        "isolated_pin_label|1524000|1270000|388e1779-90f7-4424-add0-83cec4781dad|00000000-0000-0000-0000-000000000000|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c||",
         ""
       ],
       [
-        "isolated_pin_label|1524000|1270000|388e1779-90f7-4424-add0-83cec4781dad|00000000-0000-0000-0000-000000000000|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5/001e9b64-e1ae-423e-8fea-4643e10a838c||",
-        ""
+        "multiple_net_names|1879600|762000|9c87dd0f-9ad4-451a-a18a-2a2741556d77|2a8b228b-1927-4d63-a4c6-6a9158d7b173|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5",
+        "+12V_PROTECTED is just the nuckname for the net"
       ],
       [
         "multiple_net_names|2794000|2082800|42966894-acd2-402b-b54f-aec797569557|ddd8e360-3abb-4b29-8a8c-6093ca4d3a92|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5",
         ""
       ],
       [
-        "pin_not_connected|1155700|1473200|93b0779d-7f3e-4c91-8530-7e6225e1fb82|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|1257300|1473200|3c1b6a3a-e793-4b9c-94f1-a89a56c32e6d|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|1358900|889000|31c80a90-2494-4f92-8b78-8e93f4c1fc3c|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|1803400|1854200|2fba1440-d407-424e-ab6a-16e07dd7282c|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|2057400|1473200|1fc2baa2-fbb2-41bf-af61-622b4189228c|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|2133600|762000|2b67df67-79a0-4462-a221-d06f4a3b5efa|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|2400300|1473200|cea0bedb-67fe-449f-b38a-85ef6ab613cb|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|2400300|330200|50707f54-54be-4a88-be7c-35c223c11e1c|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|2501900|1473200|8da5cf04-85d3-4448-81f1-501abefed3fb|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|2501900|330200|c4cb454f-2b06-4d3d-811b-b47170b8d882|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|3619500|1473200|29ec9095-bd89-4f81-9390-0a8765c5e7eb|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_not_connected|3619500|342900|5212ea98-0f42-40b6-af88-eaea6cb930e0|00000000-0000-0000-0000-000000000000|||",
-        ""
+        "multiple_net_names|2794000|939800|8a4c5cf7-3f82-47d3-8bde-b3b2d9658153|15d4cdf5-f53a-4a6c-9b99-8f87b0072906|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5|/99effa8a-d8cf-470a-9b87-5e99e87bfcd5",
+        "these are both GND"
       ]
     ],
     "meta": {
@@ -598,7 +554,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -619,18 +575,7 @@
         "bus_width": 12,
         "clearance": 0.2,
         "line_style": 0,
-        "name": "12V_UNPROTECTED",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgb(194, 0, 0)",
-        "tuning_profile": "",
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "line_style": 0,
-        "name": "12_PROTECTED",
+        "name": "12V_PROTECTED",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgb(220, 50, 47)",
@@ -641,6 +586,17 @@
         "bus_width": 12,
         "clearance": 0.2,
         "line_style": 0,
+        "name": "12V_UNPROTECTED",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(194, 0, 0)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "line_style": 0,
         "name": "3V3",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
@@ -650,7 +606,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "3V3_PROTECTED",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -662,7 +618,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "5V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -673,7 +629,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "5V_PROTECTED",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -697,7 +653,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "CTRL",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -709,7 +665,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -721,7 +677,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "GPIO",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -733,7 +689,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "I2C",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -745,7 +701,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "I2C0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -757,7 +713,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "I2C1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -769,7 +725,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "I2C_DEFAULT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -781,7 +737,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -793,7 +749,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "SPI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -805,7 +761,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "SPI0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -817,7 +773,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "SPI1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -829,7 +785,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "SPI_DEFAULT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -841,7 +797,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 1,
         "name": "SWD",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -855,7 +811,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 4,
         "name": "SWD_IO",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -869,7 +825,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 3,
         "name": "SW_CLK",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -883,7 +839,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "UART",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -895,7 +851,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "UART0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -907,7 +863,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "UART1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -919,7 +875,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "UART_DEFAULT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -941,7 +897,7 @@
         "pattern": "/(\\+|)12(V|VDC)_(IN|INPUT|UNPROTECTED)"
       },
       {
-        "netclass": "12_PROTECTED",
+        "netclass": "12V_PROTECTED",
         "pattern": "/(\\+|)12(V|VDC)_PROTECTED"
       },
       {
@@ -995,6 +951,34 @@
       {
         "netclass": "CTRL",
         "pattern": "/Fan Controller Pico: HMI/PICO_RESET"
+      },
+      {
+        "netclass": "5V",
+        "pattern": "+5VDC"
+      },
+      {
+        "netclass": "12V_PROTECTED",
+        "pattern": "+12VDC"
+      },
+      {
+        "netclass": "3V3",
+        "pattern": "+3.3VDC"
+      },
+      {
+        "netclass": "5V",
+        "pattern": "/Fan Controller Pico: HMI/VSYS"
+      },
+      {
+        "netclass": "12V_PROTECTED",
+        "pattern": "/+12V_FUSED_OKI78SR"
+      },
+      {
+        "netclass": "12V_UNPROTECTED",
+        "pattern": "+12V_UNPROTECTED"
+      },
+      {
+        "netclass": "12V_PROTECTED",
+        "pattern": "/+12V_FUSED_PSU1"
       }
     ]
   },
@@ -1677,7 +1661,7 @@
         "uuid": "99effa8a-d8cf-470a-9b87-5e99e87bfcd5"
       }
     ],
-    "used_designators": "D1-21,U1-9,C1-12,#GND1-14,TP1-25,R1-34,LED1-2,ZD1,J1-6,CN1-3,S1-2,PSU1-2,FAN1-5,#FLG1,IC1-5,LD1-7,Q1-2,F1-2,GND1,#PWR1-4",
+    "used_designators": "FAN1-5,PSU1-2,S1-2,CN1-5,J1-6,ZD1,LED1-2,#PWR1-15,GND1,F1-2,Q1-2,LD1-7,IC1-5,#FLG1,C1-12,U1-9,D1-21,#GND1-14,TP1-25,R1-34",
     "variants": []
   },
   "sheets": [

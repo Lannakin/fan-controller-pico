@@ -1,53 +1,73 @@
 <!-- ./README.md -->
+<!-- markdownlint-disable MD013 MD032 MD007 -->
 # **Overview** - Fan Controller TXU0204 Pico
 <!-- quick summary for github -->
 ⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️
 
-⚠️ i am just making this for a hobby.  i have no idea what i am doing.  i ⚠️
-⚠️ am a cat.                                                              ⚠️
+i am just making this for a hobby.  i have no idea what i am doing.  as you can
+see from my profile picture, i am obviously a cat, which means my electrical and
+maths skills in general are questionable *at best*.
+
+⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️
 
 i hope github completely mangles my indentation.
 
 using the gratuitously over-qualified raspberry pi pico series, this expansion
-board is meant to control up to 4 fan connections that had better not exceed
-1.5a. they should be 12vdc as well.
+board is meant to control up to 4 fan connections **that had better not exceed
+1.5a.** they should be 12vdc as well.
 
 pwm output from pico is shifted from 3.3vdc to 5vdc because if i used a 12vdc
-noctua fan, that's what noctua expects.
+noctua fan, that's what noctua expects.  intel recommended supporting 3.3vdc
+logic, but that's just a recommendation in what seems to be a de-facto standard,
+not an industry requirement.
+
+the current immediate usage scenario is controlling an air filtration box using
+a total of 6 [arctic p12 pro pst ln fans](https://www.arctic.de/media/03/4b/1a/1771239441/Spec_Sheet_P12_Pro_PST_LN_EN.pdf).  these fans are daisy-chainable, with
+the power and pwm chained to every fan in the series, but (obviously) only the
+first fan's tachometer signal connected.
+
+however, i would like this design to support more than 2 channels of fan pwm and
+fan tachometer, so that it can be used on other projects.
 
 ---
 
 ## **CREDITS FOR FONTS**
 
-[WebPlus_ToshibaSat_8x14 and WebPlus_ToshibaSat_9x16 by VileR](https://**int10h**.org/oldschool-pc-fonts/)
-
-[scientifica © 2020 Akshay Oppiliappan (nerdy@peppe.rs)](https://github.com/oppiliappan/scientifica)
+[WebPlus\_ToshibaSat\_8x14 and WebPlus\_ToshibaSat\_9x16 by VileR](https://**int10h**.org/oldschool-pc-fonts/)
 
 ## **Schematic Notes**
 <!-- Key circuit blocks, design rationale -->
 ### expected fan needs gleaned from various documentation
 
-power:
-12vdc (less than 12.6vdc) power to fan  
+power 12vdc:
+12vdc (less than 12.6vdc) power to fan
+* current draw per fan probably no higher than 0.7a
+
+power 5vdc:
+* rp2040 and rp2350 draw < 0.2A (the datasheets' highest charts were like 37mW
+  for the rp2350, and [94.1mA for the pico 2 board from vbus](https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008307-DS-2-pico-datasheet.pdf#page=13).  these datasheets
+  kinda suck)
+    * for [cyw43439](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7160/CYW43439KUBGT.pdf), probably around 0.5A
+* txu0204 power draw
 
 pwm signal:
-5vdc pullup, max 5.25vdc
-should be open-collector
-max current 5mA, but device should be capable of 8mA minimum
-21 - 28kHz is the range for arctic's accepted quality control; 25kHz preferred
+* 5vdc pullup, max 5.25vdc
+* should be open-collector
+* max current 5mA, but device should be capable of 8mA minimum
+* 21 - 28kHz is the range for arctic's accepted quality control; 25kHz preferred
 
 tach signal:
-usually pulled up using 12vdc
-noctua says max of 13v, but fan manufacturers probably only expect 5vdc
-can be pulled up to 5vdc or 3.3vdc
-probably open-collector
-max current 5mA, but device should be capable of 8mA minimum
-2 pulses per revolution
+* usually pulled up using 12vdc
+* noctua says max of 13v, but fan manufacturers probably only expect 5vdc
+  can be pulled up to 5vdc or 3.3vdc
+* probably open-collector
+* max current 5mA, but device should be capable of 8mA minimum
+* 2 pulses per revolution
 
 ## **Layout Considerations**
 <!-- Layer stackup, impedance, keep-outs -->
 might be 2 layer
-should really be 4 layer sign / gnd / pwr / sig
+should really be 4 layer sig / gnd / pwr / sig
 * oshpark
 
 general routing
@@ -85,7 +105,7 @@ TXU0202 - integrated pull-down resistors
 <!-- Power rails, decoupling strategy -->
 syntax of subsections:
 
-```txt
+```
 ### (heading size 3) Xvdc rail
 
 device / component on the rail
@@ -114,11 +134,22 @@ chanzon [2abn036f](https://www.amazon.com/dp/B07HNV6SBJ) 120vac 1a to 12vdc 3a w
 * powers pico and this expansion board
 * powers 4 x [P12 Pro PST](https://support.arctic.de/p12-pro-pst/docs) @ up to 0.3a each
 * powers 1 x [OKI-78SR-5/1.5-W36-C](https://pim.murata.com/asset/pim4/nonIsolatedDCDCconverter/OKI-78SR_PDF_NONISOLATEDDCDCCONVERTER) @ 0.69a
-* desired: transient, reverse polarity, and overcurrent protection; maybe also
-  overvoltage and undervoltage
-    * tvs diode: TPSMA6L12A, might be overkill
-    * efuse choice 1: [TPS259482A](https://www.ti.com/lit/gpn/TPS25948)
-    * efuse choice 2: [TPS259472A](https://www.ti.com/lit/ds/symlink/tps25947.pdf)
+* desired circuit protections: transient, reverse polarity, and overcurrent
+  protection; ~~maybe also overvoltage and undervoltage~~ space constraints
+    * tvs diode: SMAJ16CA
+    * ~~efuse choice 1: [TPS259482A](https://www.ti.com/lit/gpn/TPS25948)~~ space constraints
+        * protects against overvoltage, overcurrent, shorts, reverse current,
+          undervoltage
+    * ~~efuse choice 2: [TPS259472A](https://www.ti.com/lit/ds/symlink/tps25947.pdf)~~ space constraints
+        * protects against overvoltage, overcurrent, shorts, reverse current,
+          reverse polarity, undervoltage
+    * reverse polarity protection
+        * p-mosfet
+    * input tvs diodes on main power and +12vdc fan pins
+        * bidirectional to protect against surges from GND
+    * current limit
+    * input limit <=2A 12vdc to 5vdc psu
+    * idk for fans
 * may need filtering but i don't own a real oscilloscope soooooooooo
 
 OKI-78SR-5/1.5-W36-C (12vdc input):
@@ -131,6 +162,12 @@ OKI-78SR-5/1.5-W36-C (12vdc input):
 * no mention of needing input filtering;  that's very bold of you, murata
 * the only filtering mentioned appears to be what is physically on the module's
   pcb: 2x 100uF (ceramic capacitors)
+* desired circuit protections: counter-emf schottky diode
+    * schottky diode SGL1-20 for protection against counter-emf when power is
+      shut off if fuse blows / power is lost
+    * output of 12vdc to 5vdc psu has built-in limiter
+* with supposed ripple of 30mV peak-to-peak, doubt additional filtering is
+  neeeded
 
 ### 5vdc rail
 
@@ -145,7 +182,13 @@ OKI-78SR-5/1.5-W36-C (5vdc output):
 
 pico supplying via vsys
 
-* [rec using p-mosfet](https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008307-DS-2-pico-datasheet.pdf#page=21) DMG2305UX for second source, or a schottky
+* raspberry pi pico datasheets [rec using p-mosfet DMG2305UX or a schottky diode](https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008307-DS-2-pico-datasheet.pdf#page=21)
+    * ORing circuit for 5vdc vbus < - > vsys
+        * diode - feel like Vf drop too high, might hinder fans' pwm input
+        * p-mosfet - i ain't wanna do another one of these
+        * ORing dual ideal diode
+        * lm66200 is like \$0.60 each max, cool, simple, and small, vs p-fet at
+          like \$0.45 each, 40 mΩ on-resistance
 
 ### 3.3vdc rail
 
