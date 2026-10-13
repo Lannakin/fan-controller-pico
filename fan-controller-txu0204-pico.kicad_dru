@@ -1,3 +1,321 @@
 (version 1)
 ### 4E43434D NCCM SECTION START ###
+
+(rule "CLR_Default_to_Default"
+  (severity error)
+  (condition "A.NetClass == 'Default' && B.NetClass == 'Default'")
+  (constraint clearance (min 0.13mm))
+)
+
+(rule "CLR_Default_to_12V_PROTECTED"
+  (severity error)
+  (condition "A.NetClass == 'Default' && B.NetClass == '12V_PROTECTED'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_12V_PROTECTED"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == '12V_PROTECTED'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_Default_to_12V_UNPROTECTED"
+  (severity error)
+  (condition "A.NetClass == 'Default' && B.NetClass == '12V_UNPROTECTED'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_12V_UNPROTECTED"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == '12V_UNPROTECTED'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_3V3"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == '3V3'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_3V3"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == '3V3'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_3V3_PROTECTED"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == '3V3_PROTECTED'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_3V3_PROTECTED"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == '3V3_PROTECTED'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_5V"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == '5V'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_5V"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == '5V'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_5V_PROTECTED"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == '5V_PROTECTED'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_5V_PROTECTED"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == '5V_PROTECTED'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_ANALOG"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'ANALOG'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_ANALOG"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'ANALOG'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_CTRL"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'CTRL'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_CTRL"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'CTRL'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_GND"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'GND'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_GND"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'GND'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_GPIO"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'GPIO'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_GPIO"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'GPIO'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_I2C"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'I2C'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_I2C"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'I2C'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_I2C0"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'I2C0'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_I2C0"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'I2C0'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_I2C1"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'I2C1'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_I2C1"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'I2C1'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_I2C_DEFAULT"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'I2C_DEFAULT'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_I2C_DEFAULT"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'I2C_DEFAULT'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_PWR"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'PWR'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_PWR"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'PWR'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_SPI"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'SPI'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_SPI"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'SPI'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_SPI0"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'SPI0'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_SPI0"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'SPI0'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_SPI1"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'SPI1'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_SPI1"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'SPI1'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_SPI_DEFAULT"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'SPI_DEFAULT'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_SPI_DEFAULT"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'SPI_DEFAULT'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_SWD"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'SWD'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_SWD"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'SWD'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_SWD_IO"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'SWD_IO'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_SWD_IO"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'SWD_IO'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_SW_CLK"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'SW_CLK'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_SW_CLK"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'SW_CLK'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_UART"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'UART'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_UART"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'UART'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_UART0"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'UART0'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_UART0"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'UART0'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_UART1"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'UART1'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_UART1"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'UART1'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_PROTECTED_to_UART_DEFAULT"
+  (severity error)
+  (condition "A.NetClass == '12V_PROTECTED' && B.NetClass == 'UART_DEFAULT'")
+  (constraint clearance (min 0.2mm))
+)
+
+(rule "CLR_12V_UNPROTECTED_to_UART_DEFAULT"
+  (severity error)
+  (condition "A.NetClass == '12V_UNPROTECTED' && B.NetClass == 'UART_DEFAULT'")
+  (constraint clearance (min 0.2mm))
+)
 ### 4E43434D NCCM SECTION END ###

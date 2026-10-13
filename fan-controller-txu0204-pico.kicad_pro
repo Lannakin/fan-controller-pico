@@ -170,7 +170,7 @@
           "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": false,
-          "td_ontrackend": false,
+          "td_ontrackend": true,
           "td_onvia": true
         }
       ],
@@ -1661,7 +1661,7 @@
         "uuid": "99effa8a-d8cf-470a-9b87-5e99e87bfcd5"
       }
     ],
-    "used_designators": "FAN1-5,PSU1-2,S1-2,CN1-5,J1-6,ZD1,LED1-2,#PWR1-15,GND1,F1-2,Q1-2,LD1-7,IC1-5,#FLG1,C1-12,U1-9,D1-21,#GND1-14,TP1-25,R1-34",
+    "used_designators": "IC1-5,LD1-7,Q1-2,F1-2,GND1,#PWR1-15,LED1-2,R1-34,TP1-25,#GND1-14,C1-12,D1-21,U1-9,#FLG1,FAN1-5,PSU1-2,S1-2,CN1-5,J1-6,ZD1",
     "variants": []
   },
   "sheets": [

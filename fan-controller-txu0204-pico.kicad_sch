@@ -7642,7 +7642,7 @@
 	)
 	(rectangle
 		(start 17.78 142.24)
-		(end 182.88 248.92)
+		(end 182.88 250.19)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -7758,7 +7758,7 @@
 	)
 	(text "SIGNAL PULL-UP RESISTORS"
 		(exclude_from_sim no)
-		(at 425.45 177.8 0)
+		(at 425.45 260.2652 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7869,7 +7869,7 @@
 	)
 	(text_box "V_{CC} = 5V\nI_{OL} = 8mA\n\n8mA is the rec capacity, but\nmaybe should be limited to 5mA?\nlimit for TXU0204 drive capacity is\nlike 20 or 50mA, but maybe not OK\nfor fans\n\nR_{pullup(min)} = (V_{CC} - V_{outputlow(max)}) / I_{OL}\nR_{pullup(min)} = (5V - 3.33V) / 0.008A\n\nR_{pullup(min)} = 208.75Ω"
 		(exclude_from_sim no)
-		(at 425.45 177.8 0)
+		(at 425.45 260.2652 0)
 		(size 45.72 29.2948)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -7910,10 +7910,10 @@
 		)
 		(uuid "459e4c94-09c2-44f6-b382-6584207a115a")
 	)
-	(text_box "pwm frequency\n~{             }\n\ndetermining what speeds are needed to support driving fans with PWM\n\"acceptable range\" for the PWM signal = 21kHz - 28kHz\ni think this is just arctic's quality control pass range\nperiod: https://www.firgelliauto.com/blogs/calculators/pwm-frequency-period-calculator\n25kHz (40us) to 28kHz (period 35.7us)\n40000ns to 357000ns???\n\nduty cycle usually is 0 rpm for the first like 5% up to 100%\nprobably just assume lowest is 1%\nso total period:\n25kHz (40.000 us) to 28kHz (period 35.714 us)\non time @1% duty cycle is 1/100 x period\n25kHz (0.4 us) to 28kHz (period 0.35714 us)\n400ns to 357ns?\n\nsrc: https://industrialmonitordirect.com/blogs/knowledgebase/calculating-maximum-pwm-frequency-for-mosfet-power-stages\nT = minimum Target pwm period\nf = frequency\nT_{PWM(min)} >= 357ns\nf_{PWM} = 28000Hz\n\nTXU0204\nV_{CCA} = 3.3V, V_{CCB} = 5V:\n(output enable / disable)\nt_{D(ON)} = 33ns max\nt_{D(OFF)} = 40ns max\n\nt_{rise} = 9ns?\nt_{fall} = 10ns????\n\nidk if this is the right way to calculate the time spent translating and saying that's the maximum theoretical pwm bandwidth\ni also don't think i'll even be enabling / disabling the devices for each pulse or anything; tachometer pulses aren't\ngoing to be switching the OE anyway\n\nunrealistic:\nt_{sw(total)} = t_{D(ON)} + T_{D(OFF)} + t_{rise} + t_{fall}\nt_{sw(total)} = 33ns + 40ns + 9ns + 10ns\nt_{sw(total)} = 92ns\nto ms for period/pwm frequency calculator:\nt_{sw(total)} = 0.000092ms\n10869.565kHz or 10.87MHz\n\nrealistic:\nt_{sw(total)} = t_{rise} + t_{fall}\nt_{sw(total)} = 9ns + 10ns\nt_{sw(total)} = 19ns\nto ms for period/pwm frequency calculator:\nt_{sw(total)} = 0.000019ms\n52631.579kHz or 52.63MHz\n\ntachometer readout\nmaximum acceptable noise level for a fan i am willing to be in the same room as\nN_{max} = 37dBa\nall fans will be 60mm or larger, and sanyo denki's lineup tops out at about 6k rpm if restricted to 60mm<= 37dBa>=\ntachometer is usually 2 pulses per rotation (because usually fan is 2 poles according to microchip)\nmy estimated limit of 9k rpm makes me wonder what the hell i had in my last case, because it probally exceeded 37dBa\nanyway\nhttps://www.analog.com/en/resources/design-notes/calculating-the-tachometer-register-value-of-the-max6615max6616.html\n(double-checking math)\n6k rpm tachometer = 12k pulses per minute\nf_{tach}Hz = 60cycles/min x 12000pulses/min\nf_{tach} = 720Hz\n\ni've got to be doing this all wrong, surely?\n\nhttps://calculator.academy/mbps-to-hz-calculator/\nassuming that it's 1 bit per channel\n\nB_{data} is data bandwidth in (mega) bits per second\nb_{channels} is bits transferred per cycle (number of active channels) ...in bits, believe it or not\nF_{bandwidth/channel} is frequency in Hz\n\nF_{bandwidth/channel}Hz = B_{data}Mbps / b_{channels}bits/Hz\nF_{bandwidth/channel}Hz = 200Mbps / 4bits/Hz\nF_{bandwidth/channel}Hz = 50MHz\n"
+	(text_box "pwm frequency\n~{             }\ndetermining what speeds are needed to support driving fans with PWM\n\"acceptable range\" for the PWM signal = 21kHz - 28kHz (i think this is just arctic's quality control range)\nperiod src: https://www.firgelliauto.com/blogs/calculators/pwm-frequency-period-calculator\n25kHz (period of 40us) to 28kHz (period of 35.7us)\n40000ns to 357000ns\n\nduty cycle usually is 0 rpm for the first like 5% up to 100%; just assuming lowest is 1%\nso total period:\n25kHz (period of 40.000 us) to 28kHz (period of 35.714 us)\non time @1% duty cycle is 1/100 x period\n	--> 25kHz (0.4 us) to 28kHz (period 0.35714 us)\n	--> 400ns to 357ns?\nsrc: https://industrialmonitordirect.com/blogs/knowledgebase/calculating-maximum-pwm-frequency-for-mosfet-power-stages\nT = minimum Target pwm period\nf = frequency\nT_{PWM(min)} >= 357ns\nf_{PWM} = 28000Hz\n\nTXU0204 translating V_{CCA} = 3.3V, V_{CCB} = 5V:\nt_{D(ON)} = 33ns max\nt_{D(OFF)} = 40ns max\nt_{rise} = 9ns?\nt_{fall} = 10ns????\n\nidk if this is the right way to calculate the time spent translating even be enabling / disabling the devices for each pulse\nunrealistic (toggling OE):\nt_{sw(total)} = t_{D(ON)} + T_{D(OFF)} + t_{rise} + t_{fall}\n	--> t_{sw(total)} = 33ns + 40ns + 9ns + 10ns\n	--> t_{sw(total)} = 92ns\nto ms for period/pwm frequency calculator:\nt_{sw(total)} = 0.000092ms\n	--> 10869.565kHz or 10.87MHz\n\nrealistic (not constantly toggling OE):\nt_{sw(total)} = t_{rise} + t_{fall}\n	--> t_{sw(total)} = 9ns + 10ns\n	--> t_{sw(total)} = 19ns\nto ms for period/pwm frequency calculator:\nt_{sw(total)} = 0.000019ms\n	--> 52631.579kHz or 52.63MHz\n\ntachometer readout:\nmaximum acceptable fan noise level\nN_{max} = 37dBa\nall fans will be 60mm or larger, and sanyo denki's lineup tops out at about 6k rpm if restricted to 60mm<= 37dBa>=\ntachometer is usually 2 pulses per rotation (because usually fan is 2 poles according to microchip)\nsrc: https://www.analog.com/en/resources/design-notes/calculating-the-tachometer-register-value-of-the-max6615max6616.html\n6k rpm tachometer = 12k pulses per minute\nf_{tach}Hz = 60cycles/min x 12000pulses/min\n	--> f_{tach} = 720Hz\ni've got to be doing this all wrong, surely?\n\nbit bandwidth to frequency conversion:\nsrc: https://calculator.academy/mbps-to-hz-calculator/\nassuming that it's 1 bit per channel\nB_{data} is data bandwidth in (mega) bits per second\nb_{channels} is bits transferred per cycle (number of active channels) ...in bits, believe it or not\nF_{bandwidth/channel} is frequency in Hz\n\nF_{bandwidth/channel}Hz = B_{data}Mbps / b_{channels}bits/Hz\n	--> F_{bandwidth/channel}Hz = 200Mbps / 4bits/Hz\n	--> F_{bandwidth/channel}Hz = 50MHz"
 		(exclude_from_sim no)
 		(at 425.45 2.54 0)
-		(size 110.49 169.889)
+		(size 113.03 138.43)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
