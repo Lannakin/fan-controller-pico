@@ -60,13 +60,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.2,
+          "min_clearance": 0.16,
           "min_island_area": 10.0,
-          "min_thickness": 0.16,
-          "pad_connection": 3,
+          "min_thickness": 0.25,
+          "pad_connection": 2,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.2,
-          "thermal_relief_spoke_width": 0.4
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -76,7 +76,28 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "copper_edge_clearance|81233333|44090000|23cf53dc-0175-49a2-ae26-59542761bc5c|c358961b-3d48-43ec-bc47-39f261daa0e9",
+          "visual aid"
+        ],
+        [
+          "copper_edge_clearance|81233333|47139167|23cf53dc-0175-49a2-ae26-59542761bc5c|188d8f4c-49dd-492f-a0fe-11b633058cfc",
+          "visual aid"
+        ],
+        [
+          "copper_edge_clearance|81233333|48979167|23cf53dc-0175-49a2-ae26-59542761bc5c|4e673260-9415-4047-add8-511df1b26b34",
+          "visual aid"
+        ],
+        [
+          "copper_edge_clearance|81233333|50819167|23cf53dc-0175-49a2-ae26-59542761bc5c|9924f658-0ae8-425d-abc3-2b541f818a28",
+          "visual aid"
+        ],
+        [
+          "nonmirrored_text_on_back_layer|81400000|50030000|9924f658-0ae8-425d-abc3-2b541f818a28|00000000-0000-0000-0000-000000000000",
+          "visual aid"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -167,7 +188,7 @@
       },
       "teardrop_options": [
         {
-          "td_onpthpad": true,
+          "td_onpthpad": false,
           "td_onroundshapesonly": false,
           "td_onsmdpad": false,
           "td_ontrackend": true,
